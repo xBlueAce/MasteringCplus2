@@ -13,20 +13,25 @@ March 30, 2021
 
 using namespace std;
 
+
+
 struct Rectangle{
     int len;
     int wid;
 };
 
+// initializing the rectangle with values.
 void init(struct Rectangle *r, int l, int w){
 r->len  = l;
 r->wid  = w;
 }
 
+// returns area
 int area (Rectangle r){
     return r.len * r.wid;
 }
 
+// returns perimeter
 int perimeter(Rectangle r){
     return 2 * (r.len + r.wid);
 }
